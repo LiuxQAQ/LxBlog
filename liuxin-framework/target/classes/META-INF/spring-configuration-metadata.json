@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "oss",
+      "type": "com.join.lx.service.impl.OssUploadServiceImpl",
+      "sourceType": "com.join.lx.service.impl.OssUploadServiceImpl"
+    }
+  ],
+  "properties": [
+    {
+      "name": "oss.access-key",
+      "type": "java.lang.String",
+      "sourceType": "com.join.lx.service.impl.OssUploadServiceImpl"
+    },
+    {
+      "name": "oss.bucket",
+      "type": "java.lang.String",
+      "sourceType": "com.join.lx.service.impl.OssUploadServiceImpl"
+    },
+    {
+      "name": "oss.c-d-n",
+      "type": "java.lang.String",
+      "sourceType": "com.join.lx.service.impl.OssUploadServiceImpl"
+    },
+    {
+      "name": "oss.secret-key",
+      "type": "java.lang.String",
+      "sourceType": "com.join.lx.service.impl.OssUploadServiceImpl"
+    }
+  ],
+  "hints": []
+}

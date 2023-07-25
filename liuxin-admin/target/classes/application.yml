@@ -1,0 +1,38 @@
+server:
+  port: 8989
+
+spring:
+  datasource:
+    url: jdbc:mysql://123.57.74.173:3306/lxblog?serverTimezone=GMT%2B8
+    username: lxblog
+    password: lx200115
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  servlet:
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 5MB
+  redis:
+    host: 127.0.0.1
+    port: 6379
+mybatis-plus:
+  configuration:
+    # 日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: delFlag  # 逻辑删除， 1 删除 0 不删除
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      id-type: auto  # 使用雪花算法自动产生id
+  mapper-locations: classpath:mapper/*.xml
+
+
+
+
+
+oss:
+  accessKey: AAHGL6PnoeEufacGzxnWcgEls-N2ptEKgBCVQprY
+  secretKey: 1txPERCXMKr56QIXShNYzFH7stdwNoFDz8w3vns6
+  bucket: lx-blog
+  CDN: rb1dh28c7.hb-bkt.clouddn.com/
